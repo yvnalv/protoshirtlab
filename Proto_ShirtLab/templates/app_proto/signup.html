@@ -1,0 +1,11 @@
+{% extends 'app_proto/base.html' %}
+
+  {% block body_block %}
+    <h1>Please fill the form to sign up</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ signed.as_p }}
+      <input type="submit" name="" value="Sign Up">
+    </form>
+
+  {% endblock %}
